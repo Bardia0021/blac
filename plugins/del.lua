@@ -25,7 +25,7 @@ end
 
 return {
     patterns = {
-        '^[!/#](del) (%d*)$'
+        '^[!/#](rmsg) (%d*)$'
     },
     run = run
 }
