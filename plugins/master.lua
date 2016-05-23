@@ -19,14 +19,14 @@ return {
   description = ".", 
   usage = "use master command",
   patterns = {
-    "^/smart$",
-    "^!smart$",
-    "^%smart$",
-    "^$smart$",
-   "^#Smart$",
-   "^#Smart",
-   "^/smart$",
-   "^#smart$",
+    "^/master$",
+    "^!master$",
+    "^%master$",
+    "^$master$",
+   "^#master$",
+   "^#master",
+   "^/master$",
+   "^#master$",
 
   },
   run = run
