@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return [[SMARTGP
+  return [[masterGP
 -----------------------------------
 رباتی جدید برای مدیریت گروه
 -----------------------------------
