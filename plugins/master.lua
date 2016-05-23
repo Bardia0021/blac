@@ -17,7 +17,7 @@ Bot version : 4.7 ]]
 end
 return {
   description = ".", 
-  usage = "use smart command",
+  usage = "use master command",
   patterns = {
     "^/smart$",
     "^!smart$",
