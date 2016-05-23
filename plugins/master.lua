@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return [[masterGP
+  return [[smartGP
 -----------------------------------
 رباتی جدید برای مدیریت گروه
 -----------------------------------
@@ -17,16 +17,16 @@ Bot version : 4.7 ]]
 end
 return {
   description = ".", 
-  usage = "use master command",
+  usage = "use smart command",
   patterns = {
-    "^/master$",
-    "^!master$",
-    "^%master$",
-    "^$master$",
-   "^#master$",
-   "^#master",
-   "^/master$",
-   "^#master$",
+    "^/smart$",
+    "^!smart$",
+    "^%smart$",
+    "^$smart$",
+   "^#smart$",
+   "^#smart",
+   "^/smart$",
+   "^#smart$",
 
   },
   run = run
