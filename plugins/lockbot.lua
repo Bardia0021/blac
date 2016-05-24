@@ -73,8 +73,8 @@ return {
     '/bot unlock: unlock add bots to supergroup'
   },
   patterns = {
-    '^/bot (lock)$',
-    '^/bot (unlock)$',
+    '^/lock (bot)$',
+    '^/unlock (bot)$',
     '^!!tgservice (chat_add_user)$',
     '^!!tgservice (chat_add_user_link)$'
   },
