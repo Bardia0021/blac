@@ -1,4 +1,4 @@
-local Bardia = 203865460
+local mina = 203865460
 local function action_by_reply(extra, success, result)
   local hash = 'rank:variables'
   local text = ''
