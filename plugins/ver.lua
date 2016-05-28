@@ -5,15 +5,11 @@ function run(msg, matches)
 -----------------------------------
 A new bot for manage your Supergroups.
 -----------------------------------
-@Black_CH #Channel
+@amme_taalaa #Channel
 -----------------------------------
-@MehdiHS #Developer
+@Bardia021 #Developer
 -----------------------------------
-@YflQw #Manager
------------------------------------
-@Mr_Surena #Manager
------------------------------------
-Bot number : +19092545429
+Bot number : ------
 -----------------------------------
 Bot version : 6.7 ]]
 end
