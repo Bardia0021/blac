@@ -11,7 +11,7 @@ A new bot for manage your Supergroups.
 -----------------------------------
 Bot number : ------
 -----------------------------------
-Bot version : 6.7 ]]
+Bot version : 4.1]]
 end
 
 return {
