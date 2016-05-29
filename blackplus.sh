@@ -8,7 +8,7 @@ NONVOLUNTARYCHECK=0
 VOLUNTARY=1
 VOLUNTARYCHECK=0
 I=1
-BOT=blac
+BOT=BlackPlus
 RELOADTIME=10
 
 function tmux_mode {
@@ -27,14 +27,14 @@ rst=$'\e[0m'
 
 cat << EOF
 
- $f1  @Bardia021     $f2 @Bardia021     $f3  @Bardia021   $f4  @Bardia021    $f5 @Bardia021    $f6 @Bardia021  $rst
+ $f1  @Black_CH     $f2 @Black_CH     $f3  @Black_CH   $f4  @Black_CH    $f5 @Black_CH    $f6 @Black_CH  $rst
 
 EOF
-echo -e "                \e[100m                Bardia021 script           \e[00;37;40m"
-echo -e "               \e[01;34m                 By Bardia                \e[00;37;40m"
+echo -e "                \e[100m                BlackPlus script           \e[00;37;40m"
+echo -e "               \e[01;34m                 By MehdiHS                \e[00;37;40m"
 echo ""
 cat << EOF
- $bld$f1 @Bardia021   $f2 @Bardia021    $f3  @Bardia021    $f4 @Bardia021   $f5 @Bardia021    $f6  @Bardia021  $rst
+ $bld$f1 @Black_CH   $f2 @Black_CH    $f3  @Black_CH    $f4 @Black_CH   $f5 @Black_CH    $f6  @Black_CH  $rst
 
 
 EOF
@@ -55,10 +55,10 @@ sleep 0.5
 
 
 echo ""
-echo -e "\033[38;5;208m     > Channel : @amme_taalaa                         \033[0;00m"
-echo -e "\033[38;5;208m     > Developer : @Bardia021                        \033[0;00m"
-echo -e "\033[38;5;208m     > Bot ID : @IranCyberr                         \033[0;00m"
-echo -e "\033[38;5;208m     > Github : Github.com/Bardia0021/blac      \033[0;00m"
+echo -e "\033[38;5;208m     > Channel : @Black_CH                         \033[0;00m"
+echo -e "\033[38;5;208m     > Developer : @MehdiHS                        \033[0;00m"
+echo -e "\033[38;5;208m     > Bot ID : @BlackPlus                         \033[0;00m"
+echo -e "\033[38;5;208m     > Github : GitHub.com/Mehdi-HS/BlackPlus      \033[0;00m"
 echo -e "\033[38;5;208m                                                   \033[0;00m"
 
 sleep 1.5
@@ -177,11 +177,11 @@ cat << EOF
  $f1  @Black_CH     $f2 @Black_CH     $f3  @Black_CH   $f4  @Black_CH    $f5 @Black_CH    $f6 @Black_CH  $rst
  
 EOF
-echo -e "                \e[100m                Bardia021 script           \e[00;37;40m"
-echo -e "               \e[01;34m                    by Bardia               \e[00;37;40m"
+echo -e "                \e[100m                BlackPlus script           \e[00;37;40m"
+echo -e "               \e[01;34m                    by MehdiHS               \e[00;37;40m"
 echo ""
 cat << EOF
- $bld$f1 @Bardia021   $f2 @Bardia021    $f3  @Bardia021    $f4 @Bardia021   $f5 @Bardia021    $f6  @Bardia021  $rst
+ $bld$f1 @Black_CH   $f2 @Black_CH    $f3  @Black_CH    $f4 @Black_CH   $f5 @Black_CH    $f6  @Black_CH  $rst
 
 EOF
 
