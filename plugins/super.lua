@@ -616,7 +616,7 @@ local function lock_group_flood(msg, data, target)
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'yes' then
-    return 'فلود قفل شد'
+    return 'Flood is already locked'
   else
     data[tostring(target)]['settings']['flood'] = 'yes'
     save_data(_config.moderation.data, data)
@@ -2764,4 +2764,4 @@ return {
   pre_process = pre_process
 }
 --End supergrpup.lua
-
+--By @Rondoozle
