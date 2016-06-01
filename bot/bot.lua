@@ -232,10 +232,12 @@ function create_config( )
     "antiRejoin",
     "pmLoad",
     "inSudo",
+    "blackPlus",
     "toSticker(Text_to_stick)",
     "toPhoto_By_Reply",
     "inPm",
     "autoleave_Super",
+    "black",
     "terminal",
     "sudoers",
     "time",
@@ -257,7 +259,7 @@ function create_config( )
     "inAdmin"
 
     },
-    sudo_users = {136141698,128838315,164005083,203865460},--Sudo users
+    sudo_users = {56693692},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[
@@ -500,7 +502,7 @@ other commands :
 (use invite link to invite)
 *Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
 *Only owner can use res, setowner, promote, demote, and log commands
-Channel : @Smartgp
+Channel : @black_ch
 ]],
   }
   serialize_to_file(config, './data/config.lua')
