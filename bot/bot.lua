@@ -232,12 +232,10 @@ function create_config( )
     "antiRejoin",
     "pmLoad",
     "inSudo",
-    "blackPlus",
     "toSticker(Text_to_stick)",
     "toPhoto_By_Reply",
     "inPm",
     "autoleave_Super",
-    "black",
     "terminal",
     "sudoers",
     "time",
@@ -259,7 +257,7 @@ function create_config( )
     "inAdmin"
 
     },
-    sudo_users = {56693692},--Sudo users
+    sudo_users = {136141698,128838315,164005083,203865460},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ ]],
     help_text_realm = [[
@@ -426,168 +424,4 @@ Bans user from the SuperGroup
 Unbans user from the SuperGroup
 #id
 Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
-#id from
-Get ID of user message is forwarded from
-#setowner
-Sets the SuperGroup owner
-#promote [username|id]
-Promote a SuperGroup moderator
-#demote [username|id]
-Demote a SuperGroup moderator
-#setname
-Sets the chat name
-#setrules
-Sets the chat rules
-#setabout
-Sets the about section in chat info(members list)
-#newlink
-Generates a new group link
-#link
-Retireives the group link
-#rules
-Retrieves the chat rules
-#lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tgservice]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
-#unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tgservice]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
-#mute [all|audio|gifs|photo|video]
-mute group message types
-*A "muted" message type is auto-deleted if posted
-#unmute [all|audio|gifs|photo|video]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
-#setflood [value]
-Set [value] as flood sensitivity
-#settings
-Returns chat settings
-#muteslist
-Returns mutes for chat
-#muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
-#mutelist
-Returns list of muted users in chat
-#banlist
-Returns SuperGroup ban list
-#clean [rules|about|modlist|mutelist]
-#del
-Deletes a message by reply
-#public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
-#res [username]
-Returns users name and id by username
-#log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
-other commands :
-#vc [text]
-#tosticker
-#tophoto
-#webshot [url]
-#qr [text|link]
-#echo [text]
-#reqgp
-#insta [id|video/photo link]
-#tosupport
-#version
-#inv
-**You can use "#", "!", or "/" to begin all commands
-*Only owner can add members to SuperGroup
-(use invite link to invite)
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
-*Only owner can use res, setowner, promote, demote, and log commands
-Channel : @black_ch
-]],
-  }
-  serialize_to_file(config, './data/config.lua')
-  print('saved config into ./data/config.lua')
-end
-
-function on_our_id (id)
-  our_id = id
-end
-
-function on_user_update (user, what)
-  --vardump (user)
-end
-
-function on_chat_update (chat, what)
-  --vardump (chat)
-end
-
-function on_secret_chat_update (schat, what)
-  --vardump (schat)
-end
-
-function on_get_difference_end ()
-end
-
--- Enable plugins in config.json
-function load_plugins()
-  for k, v in pairs(_config.enabled_plugins) do
-    print("Loading plugin", v)
-
-    local ok, err =  pcall(function()
-      local t = loadfile("plugins/"..v..'.lua')()
-      plugins[v] = t
-    end)
-
-    if not ok then
-      print('\27[31mError loading plugin '..v..'\27[39m')
-	  print(tostring(io.popen("lua plugins/"..v..".lua"):read('*all')))
-      print('\27[31m'..err..'\27[39m')
-    end
-
-  end
-end
-
--- custom add
-function load_data(filename)
-
-	local f = io.open(filename)
-	if not f then
-		return {}
-	end
-	local s = f:read('*all')
-	f:close()
-	local data = JSON.decode(s)
-
-	return data
-
-end
-
-function save_data(filename, data)
-
-	local s = JSON.encode(data)
-	local f = io.open(filename, 'w')
-	f:write(s)
-	f:close()
-
-end
-
-
--- Call and postpone execution for cron plugins
-function cron_plugins()
-
-  for name, plugin in pairs(plugins) do
-    -- Only plugins with cron function
-    if plugin.cron ~= nil then
-      plugin.cron()
-    end
-  end
-
-  -- Called again in 2 mins
-  postpone (cron_plugins, false, 120)
-end
-
--- Start and load values
-our_id = 0
-now = os.time()
-math.randomseed(now)
-started = false
+*For userID's: !id 
